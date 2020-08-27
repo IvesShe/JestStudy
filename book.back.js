@@ -1,6 +1,9 @@
-const book = require("./book");
 const { TestScheduler } = require("jest");
-const {book01,book02} = book;
+
+// const book = require("./book");
+// const {book01,book02} = book;
+
+import{book01,book02} from "./book"
 
 test("書籍訂購方式-300元",()=>{
     expect(book01(300)).toBe("實體書");

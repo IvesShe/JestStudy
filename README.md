@@ -90,3 +90,73 @@ num run coverage
 ```
 
 ![image](./images/20200826210842.png)
+
+# 匹配器
+
+參考matchers.test.js
+
+# 自動監聽
+
+原設定
+
+![image](./images/20200827094728.png)
+
+修改設定
+
+![image](./images/20200827094801.png)
+
+執行結果，執行完不會直接退出
+
+![image](./images/20200827094854.png)
+
+# 安裝babel
+
+使程式支援ES6的語法
+
+```shell
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+```
+
+![image](./images/20200827103153.png)
+
+新增.babelrc檔
+
+![image](./images/20200827103718.png)
+
+# 修改檔名讓該檔案先不排入test
+ 
+修改前
+
+![image](./images/20200827104546.png)
+
+修改後
+
+![image](./images/20200827104610.png)
+
+修改後即不會再跑該檔案的test
+
+![image](./images/20200827105215.png)
+
+# 安裝axios
+
+```shell
+npm install axios@0.19.0 -D
+```
+
+![image](./images/20200827105658.png)
+
+# describe 鉤子函數
+
+可進行分組
+
+```ts
+// 加註.only，在同一組只會測式這個方法
+ test.only ("測試 chichi耳療的方法",()=>{
+            massage_ins.welcome(1);
+            massage_ins.server_massage_ear();
+            console.log(massage_ins.server);
+            expect(massage_ins.server).toEqual("chichi走進房間為您耳療");       
+        })
+```
+
+![image](./images/20200827140240.png)
