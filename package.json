@@ -1,0 +1,25 @@
+{
+  "name": "JestStudy",
+  "version": "1.0.0",
+  "description": "```shell",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ivesshe/jeststudy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ivesshe/jeststudy/issues"
+  },
+  "homepage": "https://gitlab.com/ivesshe/jeststudy#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
